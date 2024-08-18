@@ -1,0 +1,298 @@
+/* General Styles */
+/* Reset básico */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #5cc096;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Section Headers */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #5cc096;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Main Sections */
+.home-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.card h3, .card p {
+    margin: 0.5rem 0;
+}
+
+.card span {
+    font-size: 1.2rem;
+    color: #5cc096;
+}
+
+.contact-section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #64a78b;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-top: 2px solid #559184;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel, .right-panel {
+    flex: 1; /* Ambas as seções se expandem igualmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff3f3;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #5cc096;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #5cc096;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    font-weight: 700; /* Use bold font weight */
+    font-family: 'Laila', sans-serif; /* Apply new font */
+    font-size: 1rem; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: make text uppercase */
+}
+
+.btn:hover {
+    background-color: #1c6446;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+}
+
+/* Font Classes */
+.oswald-test {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.edu-vic-wa-nt-beginner-test {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-test {
+    font-family: "Cinzel", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.caveat-test {
+    font-family: "Caveat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quintessential-regular {
+    font-family: "Quintessential", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dawning-of-a-new-day-regular {
+    font-family: "Dawning of a New Day", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.coming-soon-regular {
+    font-family: "Coming Soon", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.mali-light {
+    font-family: "Mali", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.mali-regular {
+    font-family: "Mali", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mali-light-italic {
+    font-family: "Mali", system-ui;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.marcellus-sc-regular {
+    font-family: "Marcellus SC", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delius-regular {
+    font-family: "Delius", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cinzel-decorative-black {
+    font-family: "Cinzel Decorative", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.laila-light {
+    font-family: "Laila", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.laila-regular {
+    font-family: "Laila", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
